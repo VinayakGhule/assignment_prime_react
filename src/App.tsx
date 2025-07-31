@@ -77,7 +77,7 @@ function App() {
         onPage={(e: DataTablePageEvent) => {
           setFirst(e.first);
           setRows(e.rows);
-          if (e.page != undefined)
+          if (e.page !== undefined)
             setCurrentPage(e.page + 1);
         }}
         selectionMode="checkbox"
