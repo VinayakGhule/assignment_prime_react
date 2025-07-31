@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { DataTablePageEvent } from 'primereact/datatable';
-// import { InputSwitch } from 'primereact/inputswitch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRef } from 'react';
 
@@ -11,7 +10,6 @@ import { Column } from 'primereact/column';
 import { OverlayPanel } from 'primereact/overlaypanel';
 import { OverlayPanel as OverlayPanelType } from 'primereact/overlaypanel';
 
-// import { Paginator } from 'primereact/paginator';
 
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
@@ -37,7 +35,6 @@ function App() {
   const op = useRef<OverlayPanelType>(null);
   const [desiredData, setDesiredData] = useState<DesiredData[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
-  // const [rowClick, setRowClick] = useState(false);
   const [selectedRow, setSelectedRow] = useState<DesiredData[]>([]);
   const [first, setFirst] = useState(0);
   const [rows, setRows] = useState(10);
@@ -58,15 +55,11 @@ function App() {
     <img src={rowData.thumbnail?.lqip} alt={rowData.title} width="50" />
   );
 
-  const onPageChange = (e: { first: number; rows: number }) => {
-    setFirst(e.first);
-    setRows(e.rows);
-  };
+  
   console.log(selectedRow.length);
 
   return (
     <div className="App container my-5 " style={{ borderRadius: '30px' }}>
-      {/* <InputSwitch checked={rowClick} onChange={(e) => setRowClick(e.value)} /> */}
       <DataTable
         value={desiredData}
         lazy
