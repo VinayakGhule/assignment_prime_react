@@ -28,6 +28,9 @@ function App() {
     place_of_origin: string;
     dimensions: string;
     artist_display: string;
+    inscriptions:string;
+    date_start:number;
+    date_end:number;
   }
 
 
@@ -121,7 +124,9 @@ function App() {
         <Column field="title" header="Title" />
         <Column body={imageTemplate} header="Thumbnail" />
         <Column field="place_of_origin" header="Origin" />
-        <Column field="dimensions" header="Dimensions" />
+        <Column field="inscriptions" header="Inscriptions" />
+        <Column field="date_start" header="Date_start" />
+        <Column field="date_end" header="Data_end" />
         <Column field="artist_display" header="Artist" />
       </DataTable>
     </div>
