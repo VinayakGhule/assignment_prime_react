@@ -60,6 +60,7 @@ function App() {
 
   return (
     <div className="App container my-5 " style={{ borderRadius: '30px' }}>
+      <p>{currentPage}</p>
       <DataTable
         value={desiredData}
         lazy
