@@ -34,7 +34,6 @@ function App() {
 
   const op = useRef<OverlayPanelType>(null);
   const [desiredData, setDesiredData] = useState<DesiredData[]>([]);
-  const [currentPage, setCurrentPage] = useState<number>(1);
   const [selectedRow, setSelectedRow] = useState<DesiredData[]>([]);
   const [first, setFirst] = useState(0);
   const [rows, setRows] = useState(10);
