@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { DataTablePageEvent } from 'primereact/datatable';
-import { InputSwitch } from 'primereact/inputswitch';
+// import { InputSwitch } from 'primereact/inputswitch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRef } from 'react';
 
@@ -11,7 +11,7 @@ import { Column } from 'primereact/column';
 import { OverlayPanel } from 'primereact/overlaypanel';
 import { OverlayPanel as OverlayPanelType } from 'primereact/overlaypanel';
 
-import { Paginator } from 'primereact/paginator';
+// import { Paginator } from 'primereact/paginator';
 
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
